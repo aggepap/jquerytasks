@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border: 1px solid black;
+  width: 400px;
+}
+.date {
+  text-align: center;
+}
+.main {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  height: 500px;
+  overflow-y: scroll;
+}
+.addNoteForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.addNoteForm input {
+  width: 70%;
+  height: 30px;
+}
+.addNoteForm button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.note-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  transition: background-color 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+.note-check {
+  height: 35px;
+  width: 35px;
+  accent-color: rgb(59, 59, 59);
+}
+.note-text {
+  justify-self: flex-start;
+  padding-left: 10px;
+  width: 65%;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: 1rem;
+}
+.delete-btn {
+  height: 45px;
+  width: 50px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
